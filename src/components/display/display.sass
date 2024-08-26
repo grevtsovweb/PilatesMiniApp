@@ -1,0 +1,52 @@
+.display
+    padding: 20px
+    background-color: $light-blue-bg
+    border-radius: 16px
+
+    &__remains
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &__remains-days 
+        display: flex
+        color: $accent
+        align-items: baseline
+       
+
+    &__remains-days-number
+        font-size: 60px
+        line-height: 1em
+        font-family: $semibold
+
+    &__remains-days-postfix
+        font-size: 14px 
+        line-height: 1.5em
+        margin-left: 6px
+        font-family: $medium
+
+    &__remains-description
+        font-size: 16px
+        line-height: 1.6em
+        font-family: $semibold
+
+    &__progress-bar
+        margin-top: 16px
+    
+    &__bar
+        height: 8px
+        border-radius: 2px
+        position: relative
+        background-color: $blue-bg
+        overflow: hidden
+
+    &__bar-indicator
+        position: absolute
+        top: 0
+        right: 100%
+        width: 100%
+        height: 100%
+        background-color: $pink-accent
+        border-radius: 2px
+
+        

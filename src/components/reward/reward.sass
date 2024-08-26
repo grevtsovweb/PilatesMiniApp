@@ -1,0 +1,68 @@
+.reward
+    padding: 12px
+    border-radius: 8px
+    border: 1px solid $border
+    display: flex
+    column-gap: 12px
+
+    &__icon
+        width: 48px
+        height: 48px
+        border-radius: 8px
+        background-color: $light-pink-bg 
+
+        display: flex
+        justify-content: center
+        align-items: center
+
+        img
+            width: 32px
+            height: 32px
+
+    &__content
+        padding-top: 3px
+
+    &__title
+        font-size: 16px
+        font-family: $semibold
+        line-height: 20px
+        margin-bottom: 2px
+
+    &__description
+        font-size: 14px
+        line-height: 20px
+        font-family: $medium
+        color: $tertiary-text
+        display: flex
+        align-items: center
+
+        &--done
+            color: $success
+
+            .reward__description-icon
+
+                svg
+                    fill: $success
+
+    &__description-icon
+        width: 16px
+        height: 16px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 6px
+
+        svg
+            width: 100%
+            height: 100%
+            fill: $tertiary-text
+
+    &__link
+        font-size: 14px
+        line-height: 20px
+        color: $accent
+        text-decoration: none
+        margin-top: 12px
+        font-family: $semibold
+        display: block
+        

@@ -1,0 +1,8 @@
+mixin radio-button(text, name, value, id)
+
+    label.radio-button
+        input(type="radio" name= name, value= value, id= id)
+        span.radio-button__content 
+            span.radio-button__text=  text
+            span.radio-button__checkbox
+                +svg('20', '20', 'check')

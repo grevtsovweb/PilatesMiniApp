@@ -1,0 +1,64 @@
+.switch
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 9px
+    padding-bottom: 9px
+
+    &:active
+        background-color: $light-blue-bg
+
+    &__label
+        font-size: 16px
+        line-height: 20px
+        color: $base-text
+        font-family: $medium
+
+    input
+        position: absolute
+        width: 1px
+        height: 1px
+        margin: -1px
+        padding: 0
+        overflow: hidden
+        border: 0
+        clip: rect(0, 0, 0, 0)
+        -webkit-clip-path: inset(100%)
+        clip-path: inset(100%)
+        font-size: 16px
+        line-height: 1em
+
+        &:checked 
+            + .switch__checkbox-wrapper
+                background-color: $accent
+                border-color: $accent
+
+            + .switch__checkbox-wrapper .switch__checkbox-toggle
+                width: 24px
+                height: 24px
+                transform: translate(14px, -50%)
+                background-color: $white
+
+
+    &__checkbox-wrapper
+        width: 52px
+        height: 32px
+        box-sizing: border-box
+        border-radius: 48px
+        border: 3px solid $secondary-text
+        background-color: #F4F4F7
+        display: flex
+        position: relative
+        transition: .3s ease-out
+
+    &__checkbox-toggle
+        display: block
+        width: 18px
+        height: 18px
+        border-radius: 50%
+        background-color: $secondary-text
+        position: absolute
+        left: 5px
+        top: 50%
+        transform: translate(0, -50%)
+        transition: .3s ease-out

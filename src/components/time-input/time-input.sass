@@ -1,0 +1,52 @@
+.time-input
+    position: relative
+
+    .time-input__decor
+        width: 30px
+        height: 30px
+        position: absolute
+        right: 2px
+        top: 50%
+        transform: translateY(-50%)
+        content: ''
+        z-index: 2
+        background-color: $white
+
+
+input[type="time"]
+    font-size: 32px
+    line-height: 40px
+    padding-top: 9px
+    padding-bottom: 9px
+    padding-left: 24px
+    padding-right: 24px
+    border: 2px solid $border
+    border-radius: 8px
+    box-sizing: border-box
+    text-align: center
+    font-family: $semibold
+    background: none
+    width: 100%
+    box-sizing: border-box
+    
+    &:focus
+        outline: 0
+        box-shadow: 0 0 0 3px rgba(65, 105, 244, .5)
+
+    &:disabled
+        background-color: #F5F5F5
+        color: #808080
+
+        + .time-input__decor
+            background-color: #F5F5F5
+
+    &::-webkit-calendar-picker-indicator,
+    &::-webkit-inner-spin-button
+        background: none
+        display: none
+        -webkit-appearance: none
+        appearance: none
+
+    ::-webkit-date-and-time-value 
+        text-align: left
+

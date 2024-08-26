@@ -1,0 +1,57 @@
+.radio-button
+
+    input
+        position: absolute
+        width: 1px
+        height: 1px
+        margin: -1px
+        padding: 0
+        overflow: hidden
+        border: 0
+        clip: rect(0, 0, 0, 0)
+        -webkit-clip-path: inset(100%)
+        clip-path: inset(100%)
+        font-size: 16px
+        line-height: 1em
+
+        &:checked 
+            + .radio-button__content
+                background-color: $light-blue-bg
+                border-color: $accent
+
+            + .radio-button__content .radio-button__checkbox
+                background-color: $accent
+                border-color: $accent
+
+    &__content 
+        display: flex
+        padding-top: 13px
+        padding-bottom: 13px
+        padding-left: 20px
+        padding-right: 20px
+        border: 2px solid $border
+        border-radius: 8px
+        line-height: 20px
+        font-size: 13px
+        font-family: $medium
+        line-height: 20px
+        transition: .1s ease-out
+
+        display: flex
+        justify-content: space-between
+
+    &__checkbox
+        width: 20px
+        height: 20px
+        border-radius: 50%
+        border: 2px solid $border
+        box-sizing: border-box
+        transition: .1s ease-out
+        display: flex
+        justify-content: center
+        align-items: center
+
+        svg
+            width: 100%
+            height: 100%
+            fill: $white

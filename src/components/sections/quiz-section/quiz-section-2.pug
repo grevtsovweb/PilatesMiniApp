@@ -1,0 +1,14 @@
+include ../../radio-button/radio-button
+
+.quiz-section
+    .quiz-section__header
+        .quiz-section__header-steps Шаг 2 из 3
+        .quiz-section__header-title
+            h1.title Испытываете ли вы дискомфорт в спине? Если да, то в какой части?
+    .quiz-section__questions-list
+        +radio-button('В шейном отделе', "step-2", "1", '1')
+        +radio-button(' В области лопаток и трапеции', "step-2", "2", '2')
+        +radio-button('В шее, лопатках, трапеции', "step-2", "3", '3')
+        +radio-button('В нижней части спины', "step-2", "4", '4')
+        +radio-button('Во всей спине', "step-2", "5", '5')
+        +radio-button('Не испытываю дискомфорта', "step-2", "6", '6')
