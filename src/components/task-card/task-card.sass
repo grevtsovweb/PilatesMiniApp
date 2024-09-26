@@ -1,0 +1,51 @@
+.task-card
+    display: flex
+    align-items: center
+    padding: 12px
+    border: 1px solid $border
+    border-radius: 8px
+    column-gap: 12px
+    position: relative
+
+    &__link
+        position: absolute
+        content: ''
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+
+    &__thumb-image
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 88px
+        height: 88px
+        flex-shrink: 0
+        border-radius: 6px
+        overflow: hidden
+
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    &__title
+        font-size: 14px
+        color: $base-text
+        font-family: $semibold
+        line-height: 20px
+
+    &__time
+        font-size: 14px
+        line-height: 20px
+        font-family: $medium
+        color: $tertiary-text
+        display: flex
+        align-items: center
+
+    &__content
+        align-self: stretch
+        display: flex
+        flex-direction: column
+        justify-content: space-between

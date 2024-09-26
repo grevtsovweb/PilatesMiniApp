@@ -1,0 +1,11 @@
+.task-section
+    .task-section__info-block
+        include ../../display/display
+    .task-section__section
+        .task-section__section-header
+            h1.title.title--s Задания марафона
+            p.text Получите ссылку на актуальное задание в чат с ботом.
+        .task-section__card-list 
+            include ../../task-card/task-card
+        .task-section__get-task-button
+            +button('Получать ссылку на задание', 'button--full-width')
