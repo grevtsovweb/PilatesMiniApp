@@ -6,13 +6,37 @@
     align-items: center
     background-color: #ffffff
 
+
+    &__content
+        display: flex
+        flex-direction: column
+        align-items: center
+        row-gap: 24px
+
+    &__logo
+
+        &--show
+            animation: fadeIn 1s forwards
+
+    &__loading-indicator
+        width: 32px
+        height: 32px
+        opacity: 0
+
+        svg
+            width: 32px
+            height: 32px
+
+
+        &--show
+            animation: rotate 1s infinite, show-up 1s forwards 1s
+
     &--out
         animation: loadingOut .5s forwards
 
-    &__logo
-        opacity: 0
-        &--loading
-            animation: fadeIn 1s forwards
+    
+
+    
 
 
 .fadeIn
@@ -37,4 +61,21 @@
     100%
         transform: translate3d(0,100%,0)
         opacity: 0
+
+
+@keyframes rotate
+    0% 
+        transform: rotate(0)
+       
+    100%
+        transform: rotate(360deg)
+
+
+@keyframes show-up
+    0% 
+        opacity: 0
+       
+    100%
+        opacity: 1
+
 
