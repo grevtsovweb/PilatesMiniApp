@@ -1,6 +1,5 @@
-include mixins/svg
-include button/button-right
-include mixins/svg
+include ../components/mixins/svg
+include ../components/button/button
 
 doctype html
 html(lang="ru")
@@ -14,13 +13,11 @@ html(lang="ru")
 
 
     body
-        .app
+        .app(style="background-color: #000000;")
             .app__content
-                include sections/quiz-section/quiz-section-2
+                include sections/loading-page/loading-page
+                
 
-
-                .app__button-panel
-                    +button-right('Следующий вопрос', 'button--full-width', false, 'arrow-right')
 
 
 

@@ -1,0 +1,40 @@
+.loading-page
+    height: 100%
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: #ffffff
+
+    &--out
+        animation: loadingOut .5s forwards
+
+    &__logo
+        opacity: 0
+        &--loading
+            animation: fadeIn 1s forwards
+
+
+.fadeIn
+    animation-name: fadeIn
+    animation-duration: 1s
+    animation-fill-mode: both
+
+
+@keyframes fadeIn
+    0% 
+        opacity: 0
+        transform: scale3d(.7, .7, .7)
+    100%
+        opacity: 1
+
+
+@keyframes loadingOut
+    0% 
+        transform: translate3d(0,0,0)
+        opacity: 1
+       
+    100%
+        transform: translate3d(0,100%,0)
+        opacity: 0
+
