@@ -1,5 +1,6 @@
 include mixins/svg
 include button/button
+include snackbar/snackbar
 include mixins/svg
 
 doctype html
@@ -16,6 +17,8 @@ html(lang="ru")
         .app
             .app__content
                 include sections/task-section/task-section
+                .app__snackbar 
+                    +snackbar('Ссылка отправлена в чат', 'snackbar__active')
                 .app__nav-bar 
                     include nav-bar/nav-bar
 

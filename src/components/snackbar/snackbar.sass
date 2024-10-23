@@ -1,0 +1,20 @@
+.snackbar
+    padding: 14px 16px
+    background-color: rgba(18,18,23, .88)
+    border-radius: 8px
+    max-width: 344px
+    box-sizing: border-box
+    color: $white
+    font-size: 14px
+    line-height: 20px
+    font-family: $regular
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15)
+    transform: translate3d(0,32px,0)
+    opacity: 0
+    transition: opacity .3s, transform .3s
+    pointer-events: none
+
+    &__active
+        opacity: 1
+        transform: translate3d(0,0,0)
+        
