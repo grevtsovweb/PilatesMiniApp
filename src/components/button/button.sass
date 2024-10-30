@@ -34,9 +34,9 @@
         border-color: $accent-hover
         text-decoration: none
 
-    &:focus
-        outline: 0
-        box-shadow: 0 0 0 3px rgba(65, 105, 244, .5)
+    // &:focus
+    //     outline: 0
+    //     box-shadow: 0 0 0 3px rgba(65, 105, 244, .5)
 
     &:disabled
         background-color: $accent-pale
@@ -83,12 +83,31 @@
             border-color: $light-blue-bg
             text-decoration: none
 
-        &:focus
-            outline: 0
-            box-shadow: 0 0 0 3px rgba(65, 105, 244, .5)
+        // &:focus
+        //     outline: 0
+        //     box-shadow: 0 0 0 3px rgba(65, 105, 244, .5)
 
         &:active
             background-color: $light-blue-bg
+
+    &--tertiary-inverse
+        color: $white
+        background-color: transparent
+        border-color: transparent
+
+        &:hover
+            background-color: $light-blue-bg
+            border-color: $light-blue-bg
+            color: $accent
+            text-decoration: none
+
+        // &:focus
+        //     outline: 0
+        //     box-shadow: 0 0 0 3px rgba(65, 105, 244, .5)
+
+        &:active
+            background-color: $light-blue-bg
+            color: $accent
 
 
     &--processing

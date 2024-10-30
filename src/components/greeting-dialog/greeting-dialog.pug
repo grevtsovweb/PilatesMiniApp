@@ -1,0 +1,12 @@
+.greeting-dialog
+    .greeting-dialog__body
+        .greeting-dialog__avatar 
+            img(src="img/avatar/avatar.webp", alt="Елена Еленина")
+
+        .greeting-dialog__text 
+            h1.title.title--inverse Здравствуйте, Елена
+            p.text.text--secondary-inverse Ответьте на 3 простых вопроса, мы адаптируем марафон под вас
+        
+    .greeting-dialog__footer 
+        +button('Давайте начнем!')
+        +button('Пропустить', 'button--tertiary-inverse')

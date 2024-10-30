@@ -1,10 +1,17 @@
 .title
     +title()
-    color: $dark-blue-text
+    color: $base-text
 
     &--s
         +title-s()
         color: $base-text
+
+    &--l
+        +title-l()
+        color: $base-text
+
+    &--inverse
+        color: $white
 
 .description
     font-size: 14px
@@ -25,6 +32,12 @@
     margin: 0
     color: $secondary-text
 
+    &--secondary-inverse
+        color: $secondary-text-inverse
+
+
+.text + .text
+    margin-top: 16px
 
 ul
     font-size: 16px
