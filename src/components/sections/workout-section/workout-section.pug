@@ -8,17 +8,26 @@ include ../../mixins/svg
             h1.title.title--l Раскрытие тазобедренных суставов
         .workout-section__description-body
             .workout-section__block
-                .workout-section__block-title
-                    h2.title.title--s Описание 
+                //- .workout-section__block-title
+                //-     h2.title.title--s Описание 
                 .workout-section__block-features
                     .chips
                         .chips__icon
-                            +svg(20, 20, "clock")
+                            +svg(16, 16, "clock")
                         .chips__text ~35 минут
 
                     .chips
                         .chips__icon
-                            +svg(20, 20, "graph")
+                            +svg(16, 16, "graph")
                         .chips__text Средний уровень 
                 .workout-section__block-text 
                     p.text Идеальное сочетание из пилатес зарядок  на эти выходные для всех нас. Прекрасно подходит для тех, кто много сидел.
+            .workout-section__block
+                .workout-section__block-title
+                    h2.title Зарядки суперсерии
+                .workout-section__block-list
+                    include ../../task-card/task-card-complete
+                    include ../../task-card/task-card
+                    include ../../task-card/task-card
+                    include ../../task-card/task-card
+                    include ../../task-card/task-card

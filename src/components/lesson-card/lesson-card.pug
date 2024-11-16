@@ -1,0 +1,17 @@
+include ../mixins/svg
+
+.lesson-card(tabindex)
+    //- a(href="#").lesson-card__link
+    .lesson-card__thumb-image
+        img(src="img/task-card/thumb.webp", alt="Упражнение для лопаток")
+        span.lesson-card__complete-indicator
+            span.lesson-card__complete-indicator-icon
+                +svg("20", "20", "check-circle")
+    .lesson-card__content
+        .lesson-card__content-header
+            .lesson-card__title День 1
+            .lesson-card__time 
+                .lesson-card__time-icon 
+                    +svg(16, 16, "clock")
+                | 8 минут
+        .lesson-card__content-description Супер-серии из сочетания двух классов для устранения дискомфорта 

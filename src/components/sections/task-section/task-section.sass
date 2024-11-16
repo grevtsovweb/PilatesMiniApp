@@ -2,6 +2,31 @@
     padding-top: 20px   
     padding-bottom: 82px  
 
+    &__header
+        display: flex
+        padding-left: 20px
+        padding-right: 20px
+        padding-bottom: 20px
+
+    &__header-link
+        width: 44px
+        height: 44px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-left: auto
+        margin-right: -10px
+
+        svg
+            width: 24px
+            height: 24px
+            fill: $secondary-text
+
+    &__current-task
+        padding-left: 20px
+        padding-right: 20px
+        padding-bottom: 16px
+
 
     &__info-block
         padding-bottom: 12px
@@ -14,10 +39,20 @@
     &__card-list
         display: flex
         flex-direction: column
-        row-gap: 8px
+        row-gap: 10px
+        padding-top: 12px
+
+    &__offer-list
+        padding-bottom: 20px
+
+    &__offer-slider
+        display: flex
+
+        &.swiper
+            overflow: visible 
 
     &__section
-        padding-top: 12px
+        padding-top: 16px
         padding-bottom: 12px
         padding-left: 20px
         padding-right: 20px
