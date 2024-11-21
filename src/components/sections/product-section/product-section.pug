@@ -1,0 +1,32 @@
+.product-section
+    .product-section__image(style="background-image: url('img/product/product.webp')" )
+    
+    .product-section__content
+        .product-section__header 
+            .product-section__subtitle Тариф для новичков
+            .product-section__title
+                .title.title--m Прогрессируйте быстрее на пути к созданию подтянутого и здорового тела
+            .product-section__header-label
+                .chips.chips--no-icon.chips--warning
+                    .chips__text Скидка — 30%
+
+        .product-section__list 
+            +list-item('calendar', 'Учтём ваши цели, график, персональные особенности и пожелания')
+            +list-item('layers', 'Подберём уникальную комбинацию из 5 направлений, которая подойдёт именно вам')
+            +list-item('user-check', 'Адаптируем программу под вас в процессе занятий для достижения быстрых результатов')
+
+        .product-section__gift-block
+            .product-section__gift-block-header
+                .title.title--m В подарок
+            include ../../card/card
+
+        .product-section__price-block
+            .product-section__price-table
+                .product-section__price-label Цена со скидкой новичка:
+                .product-section__price
+                    .product-section__price-old 3 280 ₽
+                    .product-section__price-current 2 296 ₽
+
+            .product-section__price-button     
+                +button('Оформить', 'button--full-width')
+    

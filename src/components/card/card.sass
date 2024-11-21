@@ -1,0 +1,31 @@
+.card
+    display: flex
+
+    &__image
+        width: 64px
+        height: 64px
+        margin-right: 16px
+        border-radius: 4px
+        flex-shrink: 0
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &--gift
+            background-color:  #FEEBEB
+
+    &__content
+        padding-top: 4px
+        
+
+    &__title
+        font-size: 14px
+        line-height: 20px
+        font-family: $semibold
+        margin-bottom: 4px
+
+    &__description
+        font-size: 12px
+        line-height: 16px
+        font-family: $medium
+        color: $secondary-text

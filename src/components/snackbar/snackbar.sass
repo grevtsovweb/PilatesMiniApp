@@ -13,6 +13,23 @@
     opacity: 0
     transition: opacity .3s, transform .3s
     pointer-events: none
+    display: flex
+    
+
+    &__icon
+        width: 24px
+        height: 24px
+        flex-shrink: 0
+        margin-right: 8px
+
+        svg
+            fill: $success
+
+    &--positive
+
+    &--with-icon
+        .snackbar__content
+            padding-top: 2px
 
     &__active
         opacity: 1

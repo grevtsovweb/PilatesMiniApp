@@ -1,0 +1,31 @@
+.achieve-section
+    .achieve-section__image(style="background-image: url('img/achieve/body.webp')")
+    .achieve-section__content
+        .achieve-section__header 
+            .achieve-section__title
+                .title.title--l 3 дня доступа по Клубной карте
+            .achieve-section__header-label
+                .chips
+                    .chips__icon
+                        +svg(16, 16, "mail")
+                    .chips__text Нужен email
+        .achieve-section__about
+            .achieve-section__about-header
+                .title.title--m О подарке
+                p Доступ к занятиям в Pilates Flow по Клубной карте. Которая включает
+
+            .achieve-section__list
+                +list-item-line('star', '200+ классов')
+                +list-item-line('star', 'Тематические недели')
+                +list-item-line('star', 'Супер-серии') 
+                +list-item-line('star', 'Поддержки кураторов') 
+                +list-item-line('star', 'Доступ к сезонным новинкам') 
+
+        .achieve-section__form
+            form.form(action="#") 
+                .form__fields
+                    .form__fields-row
+                        .field
+                            input.field__input(type="text" placeholder="E-mail")
+                .form__button
+                    +button('Отправить на почту', 'button--full-width')

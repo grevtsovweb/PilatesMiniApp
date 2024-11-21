@@ -1,0 +1,91 @@
+.product-section
+    padding-bottom: 104px
+
+    &__image
+        height: 180px
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        background-color: #F0F3F6
+
+    &__content
+        padding-top: 20px
+        padding-left: 20px
+        padding-right: 20px
+
+    &__header
+
+    &__subtitle
+        margin-bottom: 8px
+        font-size: 12px
+        line-height: 16px
+        color: $secondary-text
+
+    &__title
+        margin-bottom: 12px
+
+
+    &__list
+        display: flex
+        flex-direction: column
+        row-gap: 16px
+        padding-top: 32px
+
+
+    &__gift-block
+        padding-top: 32px
+
+    &__gift-block-header
+        margin-bottom: 16px
+
+    &__price-block
+        padding-top: 48px
+
+    &__price-table
+        display: flex
+        align-items: flex-end
+        justify-content: space-between
+
+    &__price
+        display: flex
+        align-items: baseline
+        margin-bottom: -2px
+
+
+    &__price-label
+        font-size: 14px
+        line-height: 20px
+        max-width: 120px
+
+    &__price-old
+        font-size: 14px
+        line-height: 20px
+        font-family: $semibold
+        color: $secondary-text
+        margin-right: 8px
+        white-space: nowrap
+        position: relative
+
+        &::after
+            position: absolute
+            content: ''
+            width: 100%
+            height: 1px
+            background-color: $secondary-text
+            top: 50%
+            left: 0
+
+
+    &__price-current
+        font-size: 24px
+        line-height: 32px
+        font-family: $semibold
+        white-space: nowrap
+
+
+    &__price-button 
+        margin-top: 24px
+
+
+
+

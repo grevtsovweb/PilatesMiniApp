@@ -13,6 +13,26 @@ html(lang="ru")
 
 
     body
+        style(type="text/css").
+            li {
+                padding-top: 8px;
+                padding-bottom: 8px;
+            }
+
+            a {
+                color: #000000;
+                text-decoration: none;
+            }
+
+            ul, ol {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-right: 16px;
+            }
+
+            .new {
+                background-color: #e0ffe6;
+            }
         ol
             li
                 a(href="loading-page.html") Экран загрузки 
@@ -20,14 +40,37 @@ html(lang="ru")
                 a(href="greeting-page.html") Страница приветствия
             li
                 a(href="index.html") Главная 
+            li.new
+                a(href="gift-page-v2.html") Подарки страница
+                ul 
+                    li 
+                        a(href="bottom-sheet-subscribe.html") Подарок (За подписку)
+                        ul 
+                            li 
+                                a(href="bottom-sheet-subscribe-checking.html")  Подарок (За подписку) / Начать проверку
+                            li 
+                                a(href="bottom-sheet-subscribe-processing.html")  Подарок (За подписку) /Процесс проверки
+                            li 
+                                a(href="bottom-sheet-subscribe-success.html") Подарок (За подписку) / Успешно, забрать подарок
+                    li 
+                        a(href="bottom-sheet-club-card.html") Подарок за Email
+                        ul 
+                            li 
+                                a(href="gift-page-success-mail.html")  Уведомление "Подарок отправлен"
+                    li 
+                        a(href="bottom-sheet-flow-3-days.html") Подарки "3 дня в потоке"
+                    li 
+                        a(href="bottom-sheet-flow-5-days.html") Подарки "5 дней в потоке"
+                    li 
+                        a(href="bottom-sheet-flow-7-days.html") Подарки "7 дней в потоке"
+            //- li
+            //-     a(href="task-page.html") Задание на сегодня (Old)
+            li.new
+                a(href="product-page.html") Продукты
             li
-                a(href="gift-page.html") Подарки
-            li
-                a(href="task-page.html") Задание на сегодня (Old)
-            li
-                a(href="task-page-v2.html") Задание на сегодня V2 (New)
-            li
-                a(href="task-page-v3.html") Задание на сегодня V3 (Видео) (New)
+                a(href="task-page-v2.html") Задание на сегодня
+            //- li
+            //-     a(href="task-page-v3.html") Задание на сегодня V3 (Видео) (New)
             li
                 a(href="workout-page.html") Видео упражнение
             li

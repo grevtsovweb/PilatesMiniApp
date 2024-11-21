@@ -1,5 +1,5 @@
 .chips
-    display: flex
+    display: inline-flex
     align-items: center
     height: 24px
     padding-left: 6px
@@ -27,6 +27,21 @@
     &__text
         font-size: 12px
         line-height: 16px
-        font-weight: 600
+        font-family: $semibold
         white-space: nowrap
         // color: $secondary-text
+
+    
+    &--no-icon
+        padding-left: 8px
+
+    &--warning
+        background-color: $orange
+        color: $white
+
+    &--complete
+        background-color: $success-light
+        color: $success
+
+        .chips__icon svg
+            fill: $success

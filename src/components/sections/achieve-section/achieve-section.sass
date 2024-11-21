@@ -1,0 +1,88 @@
+.achieve-section
+    position: relative
+    display: flex
+    flex-direction: column
+    min-height: 100%
+
+    &__image
+        height: 180px
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        background-color: #F0F3F6
+
+
+    &__content
+        padding-top: 20px
+        padding-left: 20px
+        padding-right: 20px
+        padding-bottom: 32px
+
+    &__header
+
+    &__subtitle
+        margin-bottom: 8px
+        font-size: 12px
+        line-height: 16px
+        color: $secondary-text
+
+    &__title
+        margin-bottom: 12px
+
+
+    &__about
+        margin-top: 32px
+
+    &__about-header
+        margin-bottom: 16px
+
+        p
+            font-size: 14px
+            line-height: 20px
+            color: $base-text
+            font-family: $medium
+            margin-top: 12px
+            margin-bottom: 16px
+
+    &__text
+        font-size: 14px
+        line-height: 20px
+        color: $secondary-text
+
+        p
+            margin: 0
+
+        p + p 
+            margin-top: 10px
+
+    &__about-list
+        display: flex
+        flex-direction: column
+        row-gap: 10px
+
+
+    &__about-list-item
+        font-size: 14px
+        line-height: 20px
+        color: $secondary-text
+
+    &__list
+        display: flex
+        flex-direction: column
+        row-gap: 16px
+        margin-top: 16px
+
+    &__form
+        margin-top: 32px
+
+    &__footer-fixed
+        margin-top: auto
+        position: sticky
+        padding-left: 20px
+        padding-right: 20px
+        padding-top: 16px
+        padding-bottom: 32px
+        bottom: 0
+        right: 0
+        left: 0
+        background-color: $white

@@ -1,5 +1,8 @@
-mixin snackbar(text, className)
+mixin snackbar(text, className, icon)
     .snackbar(class= className)
+        if icon 
+            .snackbar__icon 
+                +svg(24,24, icon)
         .snackbar__content
             .snackbar__text= text
         

@@ -11,14 +11,14 @@
     font-size: 15px
     line-height: 20px
     font-family: $semibold
-    padding-top: 14px
-    padding-bottom: 14px
+    padding-top: 15px
+    padding-bottom: 15px
     padding-left: 24px
     padding-right: 24px
     text-align: center
     white-space: normal
     word-wrap: normal
-    border: 1px solid $accent
+    border: none
     border-radius: 8px
     box-sizing: border-box
     color: #ffffff
@@ -117,6 +117,24 @@
 
     &--full-width
         width: 100%
+
+
+    &--positive
+        background-color: $success
+
+        &:disabled
+            background-color: $success-pale
+            color: $white
+            pointer-events: none
+
+        &:hover
+            background-color: $success-hover
+            border-color: $success-hover
+            text-decoration: none
+
+        &:active
+            background-color: $success-hover
+            color: $white
         
 
 @keyframes processing
