@@ -1,0 +1,42 @@
+.tooltip
+    padding: 14px 16px
+    background-color: rgba(18,18,23, .96)
+    border-radius: 8px
+    box-sizing: border-box
+    color: $white
+    font-size: 14px
+    line-height: 20px
+    font-family: $regular
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 4px 8px 3px rgba(0, 0, 0, 0.15)
+    opacity: 1
+    transition: opacity .3s, transform .3s
+    display: flex
+    max-width: 320px
+    width: fit-content
+
+    &__content
+        display: flex
+        flex-direction: column
+        width: max-content
+        max-width: 100%
+
+
+    &__link
+        margin-top: 16px
+
+
+    &--right-top
+        position: relative
+        
+        &::before
+            content: ''
+            position: absolute
+            width: 0px
+            height: 0px
+            border-style: solid
+            border-width: 0 8.5px 9px 8.5px
+            border-color: transparent transparent rgba(18,18,23, .96) transparent
+            transform: rotate(0deg)
+            bottom: 100%
+            right: 8px
+

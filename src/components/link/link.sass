@@ -1,0 +1,32 @@
+.link
+    font-size: 14px
+    line-height: 20px
+    color: $accent
+    display: inline-flex
+    align-items: center
+    text-decoration: none
+    font-family: $semibold
+    transition: .2s color
+    -webkit-tap-highlight-color: transparent
+
+    &__icon
+        width: 20px
+        height: 20px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-left: 8px
+
+        svg
+            fill: $accent
+            width: 100%
+            height: 100%
+            transition: .2s fill
+
+
+    &:active
+        color: $accent-pale
+
+        .link__icon svg
+            fill: $accent-pale
+            
